@@ -198,7 +198,22 @@
                     </includes>
                 </configuration>
             </plugin>
-
+            <plugin>
+                    <groupId>org.owasp</groupId>
+                    <artifactId>dependency-check-maven</artifactId>
+                    <executions>
+                        <execution>
+                            <id>dependency-check-maven_GOALcheck_on_PHASEverify</id>
+                            <phase>verify</phase>
+                            <goals>
+                                <goal>check</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                    <configuration>
+                        <format>XML</format>
+                    </configuration>
+                </plugin>
         </plugins>
     </build>
 </project>
