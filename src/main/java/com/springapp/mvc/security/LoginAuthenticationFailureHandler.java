@@ -20,6 +20,8 @@ public class LoginAuthenticationFailureHandler implements AuthenticationFailureH
 
         //failiurResponseDecider has to be checked in order to remove null pointer exception
 
+            System.out.println("Testing the new modification in jenkins");
+
 
         httpServletResponse.sendRedirect("login");
     }
