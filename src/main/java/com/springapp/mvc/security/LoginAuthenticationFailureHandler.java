@@ -22,6 +22,8 @@ public class LoginAuthenticationFailureHandler implements AuthenticationFailureH
 
             System.out.println("Testing the new modification in jenkins");
 
+            System.out.println("Testing the new second modification in jenkins");
+
 
         httpServletResponse.sendRedirect("login");
     }
