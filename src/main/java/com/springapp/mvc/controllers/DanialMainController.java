@@ -74,15 +74,23 @@ public class DanialMainController {
         return "general/index";
     }
 
+
+
+
     @RequestMapping(method = RequestMethod.GET)
     public ModelAndView printWelcome() {
         return new ModelAndView("redirect:/login");
     }
 
+
+
+
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String Login() {
         return "general/login";
     }
+
+
 
 
     @RequestMapping(value = "/create-user-accounts", method = RequestMethod.GET)
